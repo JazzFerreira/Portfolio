@@ -1,0 +1,960 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #1E1E1E;
+	font-family: 'Raleway',sans-serif;
+	font-size: 1rem;
+	color: #A2A2A2;
+	
+}
+
+body p {
+	opacity: 50%;
+}
+
+.container {
+	width: 70%;
+	margin: 0 auto;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: 700;
+	margin-bottom: 0.7em;
+	text-align: center;
+	color: #FFF;
+	opacity: 90%;
+}
+
+/* MENU DE NAVEGAÇÃO */
+
+.cabecalhoPrincipal {
+	padding: 40px 0;
+}
+
+.cabecalhoPrincipal .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.cabecalhoPrincipal-titulo a img {
+	opacity: 80%;
+	width: 7vw;
+}
+
+.cabecalhoPrincipal-nav {
+	display: flex;
+}
+
+.cabecalhoPrincipal-nav-link {
+	padding: 10px;
+	margin-left: 20px;
+	text-decoration: none;
+	transition: .5s;
+	display: block;
+	color: #A2A2A2;
+}
+
+.cabecalhoPrincipal-nav-link:hover{
+	color: #F06000;
+}
+
+.cabecalhoPrincipal-nav-email {
+	font-weight: 700;
+}
+
+/* HERO */
+
+#hero {
+	padding: 20px 0 40px 0;
+}
+
+#hero .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.hero-titulo {
+	color: #FFF;
+	font-size: 3.5rem;
+	font-weight: 700;
+	margin-bottom: 0.5em;
+	opacity: 90%;
+}
+
+.hero-apresentacao {
+	font-size: 1.2em;
+	margin-bottom: 1em;
+	line-height: 1.2;
+	opacity: 50%;
+}
+
+.hero-redes {
+	display: flex;
+}
+
+.hero-redes-links a {
+	color: #A2A2A2;
+	font-weight: 500;
+	text-decoration: none;
+	opacity: 50%;
+	margin-right: 30px;
+	transition: all 0.3s ease-in-out;
+}
+
+.hero-redes-links a:hover {
+	opacity: 80%;
+}
+
+.hero-redes-links a::after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f0da";
+	margin-left: 5px;
+}
+
+.hero-redes-links a:hover::after {
+	color: #F06000;
+}
+
+.hero-imagem {
+	margin-left: 3.5em;
+}
+
+/* SOBRE MIM */
+
+#sobreMim {
+	padding: 6em 0; 
+	background-color: #2C2C2D;
+}
+
+.sobreMim-titulo{
+	text-align: left;
+}
+
+.sobreMim-texto {
+	width: 70%;
+	margin-bottom: 1em;
+	line-height: 1.2;
+}
+
+.assinatura{
+	height: 2.5em;
+}
+
+/* SKILLS & HOBBIES */
+
+#skills {
+	padding: 7em 0 5em 0;
+}
+
+.skillsHobbies-lista {
+	margin-top: 2em;
+	display: flex;
+	justify-content: space-between;
+}
+
+.skillsHobbies-item {
+	background-color: #2C2C2D;
+	margin: 1%;
+	width: 100%;
+	height: 8em;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-end;
+	transition: all 0.3s ease-in-out;
+}
+
+.skillsHobbies-item:hover {
+	background-color: hsla(240, 1%, 17%, 0.85);
+}
+
+.skillsHobbies-item p{
+	font-weight: 700;
+	transition: all 0.3s ease-in-out;
+}
+
+.fab, .fas {
+	font-size: 2em;
+	margin-bottom: 10px;
+	color: #11ABB0;
+	transition: all 0.3s ease-in-out;
+}
+
+.skillsHobbies-item:hover > .fab {
+	color: #F06000;
+	opacity: 100%;
+}
+
+.skillsHobbies-item:hover > .fas {
+	color: #F06000;
+	opacity: 100%;
+}
+
+.skillsHobbies-item:hover > p {
+	opacity: 100%;
+}
+
+#hobbies {
+	padding: 1em 0 7em 0;
+}
+
+/* FORMAÇÃO ACADÊMICA */
+
+#formacao {
+	padding: 7em 0;
+	background-color: #2C2C2D;
+}
+
+.formacao-lista {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 3em;
+}
+
+.formacao-item {
+	margin: 1%;
+}
+
+.formacao-item h3 {
+	font-size: 1.1em;
+	font-weight: 600;
+	margin: 0.5em 0 0.5em 0;
+}
+
+.formacao-box {
+	background-color: #1E1E1E;
+	width: 30em;
+	height: 15em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.formacao-img {
+	height: 4vw;
+}
+
+.formacao-img__ufcg {
+	height: 5.5vw;
+}
+
+/* PROJETOS */
+
+#projetos {
+	padding: 80px 0;
+}
+
+.projetos-d {
+	margin-top: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.projetos-d .projetos-imgBox {
+	margin-right: 20px;
+}
+
+.projetos-e {
+	margin-top: 35px;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.projetos-img {
+	width: 50vw;
+	max-width: 750px;
+}
+
+.projetos-conteudo h3 {
+	font-size: 1.3em;
+	font-weight: 700;
+	margin-bottom: 0.5em;
+}
+
+.projetos-conteudo p {
+	margin-bottom: 0.5em;
+}
+
+.projetos-btns {
+	display: flex;
+}
+
+.btn-repo {
+	font-family: 'Raleway',sans-serif;
+	text-decoration: none;
+	color: #11ABB0;
+	background-color: transparent;
+	border: #11ABB0 1px;
+	border-style: solid;
+	padding: 15px;
+	margin-right: 10px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn-repo:hover {
+	color: #F06000;
+	border: #F06000 1px;
+	border-style: solid;
+	background-color: hsla(24, 100%, 47%, 0.2);
+}
+
+.btn-demo {
+	font-family: 'Raleway',sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background-color: #11ABB0;
+	transition: all 0.3s ease-in-out;
+	border: none;
+	padding: 15px;
+	cursor: pointer;
+}
+
+.btn-demo:hover {
+	background-color: #F06000;
+}
+
+/* CONTATO */
+
+#contato {
+	padding: 80px 0;
+	background-color: #2C2C2D;
+}
+
+#contato .container{
+	display: flex;
+}
+
+.cont-img{
+	padding: 0;
+	margin: 0;
+	width: auto;
+	height: 100%;
+}
+
+.contato-conteudo {
+	width: auto;
+	padding-left: 3em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.contato-conteudo h2 {
+	text-align: left;
+}
+
+.contato-conteudo p {
+	line-height: 1.2;
+}
+
+.contato-form {
+	margin-top: 1.5em;
+	display: flex;
+	flex-direction: column;
+}
+
+.formLabel {
+	font-size: 0.9em;
+	color: #A2A2A2;
+	background-color: #FFF;
+	padding: 10px;
+	border-radius: 7px 7px 0 0;
+}
+
+.formInput {
+	font-family: 'Raleway',sans-serif;
+	color: #A2A2A2;
+	height: 1.7em;
+	padding: 7px;
+	background-color: #FFF;
+	border: none;
+	margin-bottom: 1em;
+	border-radius: 0 0 7px 7px;
+}
+
+.formTextArea {
+	height: auto;
+}
+
+.formBtn {
+	font-family: 'Raleway',sans-serif;
+	font-size: 1em;
+	color: #fff;
+	background-color: #11ABB0;
+	border: none;
+	padding: 15px;
+	width: 11em;
+	margin: 0;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.formBtn:hover {
+	background-color: #F06000;
+}
+
+#error_message {
+	color: #F06000;
+	margin-bottom: 0;
+	padding: 0px;
+	text-align: center;
+	font-size: 14px;
+	transition: all 0.5s ease;
+  }
+
+/* FOOTER */
+
+#rodape {
+	padding: 40px 0;
+	background: #141516;
+}
+
+#rodape .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.rodapeTexto {
+	text-align: center;
+	font-size: 0.9em;
+	font-weight: 300;
+	opacity: 100%;
+}
+
+.rodapeTexto a {
+	font-weight: 500;
+	text-decoration: none;
+	font-weight: 600;
+	color: #A2A2A2;
+	
+}
+
+.rodapeTexto a:hover {
+	color: #F06000;
+}
+
+.linkTop {
+	color: #A2A2A2;
+	opacity: 100%;
+	text-decoration: none;
+	border: #2C2C2D solid 1.5px;
+	padding: 15px;
+	transition: all 0.3s ease-in-out;
+}
+
+.linkTop:hover {
+	color: #F06000;
+	opacity: 100%;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 600px) {
+
+	.container{
+		width: 85%;
+	}
+	
+	/* NAV */
+
+	.cabecalhoPrincipal {
+		padding: 40px 0 20px 0;
+	}
+
+	.cabecalhoPrincipal-titulo a img {
+		width: 25vw;
+	}
+
+	.cabecalhoPrincipal-nav-link {
+		display: none;
+	}
+	
+	.cabecalhoPrincipal-nav-email {
+		display: inherit;
+		font-weight: 400;
+		font-size: 0.8em;
+	}
+	
+	/* HERO */
+	
+	#hero .container {
+		flex-direction: column-reverse;
+	}
+
+	.hero-texto {
+		width: 100%;
+	}
+
+	.hero-titulo {
+		font-size: 1.8em;
+		margin: 20px 0;
+
+	}
+
+	.hero-imagem {
+		margin: 0;	
+	}
+
+	.hero-imagem img {
+		height: 15em;
+	}
+
+	.hero-redes {
+		font-size: 0.75em;
+		justify-content: flex-start;
+	}
+
+	.hero-redes-links {
+		padding: 0;
+		margin: 0;
+	}
+
+	.insta {
+		text-align: right;
+	}
+
+	/* SOBRE MIM */
+
+	#sobreMim{
+		padding: 2.5em 0;
+	}
+
+	.sobreMim-texto {
+		width: 100%;
+	}
+
+	/* SKILLS & HOBBIES */
+
+	#skills {
+		padding: 2.5em 0 1.5em 0;
+	}
+
+	#hobbies {
+		padding: 2 0 1.5em 0;
+	}
+
+	.skillsHobbies-lista {
+		flex-wrap: wrap;
+		
+	}
+
+	.skillsHobbies-item {
+		width: 35%;
+		height: 8em;
+		margin: 1%;
+	}
+
+	/* FORMAÇÃO */
+
+	#formacao {
+		padding: 2.5em 0;
+	}
+
+	.formacao-lista {
+		flex-direction: column;
+	}
+
+	.formacao-item p {
+		margin-bottom: 10px;
+	}
+
+	.formacao-box {
+		width: auto;
+
+
+	}
+	.formacao-img, .formacao-img__ufcg {
+		width: auto;
+		height: 17vw;
+	}
+	
+	/* PROJETOS */
+
+	#projetos {
+		padding: 2.5em 0;
+	}
+	
+	.projetos-d {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	.projetos-e {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	.projetos-img {
+		width: 100%;
+	}
+
+	.projetos-conteudo {
+		margin: 15px 0;
+	}
+
+	/* CONTATO */
+	
+	.cont-img {
+		display: none;
+	}
+
+	.contato-conteudo {
+		padding: 0;
+	}
+
+	/* RODAPE */
+
+	#rodape .container {
+		flex-direction: column;
+	}
+
+	.linkTop {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px){
+
+	.container{
+		width: 90%;
+	}
+	
+	/* NAV */
+
+	.cabecalhoPrincipal {
+		padding: 40px 0 20px 0;
+	}
+
+	.cabecalhoPrincipal-nav-link {
+		display: none;
+	}
+	
+	.cabecalhoPrincipal-nav-email {
+		display: inherit;
+		font-weight: 400;
+	}
+	
+	/* HERO */
+
+	.hero-texto {
+		padding-right: 1em;
+		width: 67%;
+	}
+	
+	.hero-titulo {
+		font-size: 1.5em;
+		margin: 20px 0;
+
+	}
+
+	.hero-apresentacao {
+		font-size: 1em;
+	}
+
+	.hero-redes {
+		font-size: 0.9em;
+	}
+
+	.hero-imagem {
+		margin: 0;	
+	}
+
+	.hero-imagem img {
+		width: 30vw;
+		height: auto;
+	}
+
+	.hero-redes {
+		justify-content: space-between;
+	}
+
+	.insta {
+		text-align: right;
+	}
+
+	/* SOBRE MIM */
+
+	#sobreMim{
+		padding: 2.5em 0;
+	}
+
+	.sobreMim-texto {
+		width: 100%;
+	}
+
+	/* SKILLS & HOBBIES */
+
+	#skills {
+		padding: 2.5em 0 1.5em 0;
+	}
+
+	#hobbies {
+		padding: 2 0 1.5em 0;
+	}
+
+	.skillsHobbies-lista {
+		flex-wrap: wrap;
+		
+	}
+
+	.skillsHobbies-item {
+		width: 36vw;
+		height: 8em;
+		margin: 1%;
+	}
+
+	/* FORMAÇÃO */
+
+	#formacao {
+		padding: 2.5em 0;
+	}
+
+	.formacao-lista {
+		justify-content: space-between;
+	}
+
+	.formacao-item {
+		width: 45%;
+	}
+
+	.formacao-item p {
+		margin-bottom: 10px;
+	}
+
+	.formacao-box {
+		width: auto;
+
+
+	}
+	.formacao-img {
+		width: 9em;
+		height: auto;
+	}
+
+	.formacao-img__ufcg{
+		width: 33vw;
+		height: auto;
+	}
+	
+	/* PROJETOS */
+
+	#projetos {
+		padding: 2.5em 0;
+		align-items: center;
+	}
+	
+	.projetos-d {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	.projetos-e {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	.projetos-img {
+		width: 100%;
+	}
+
+	.projetos-conteudo {
+		margin: 15px 0;
+	}
+
+	/* CONTATO */
+	
+	.cont-img {
+		display: none;
+	}
+
+	.contato-conteudo {
+		padding: 0;
+		width: 100%;
+	}
+
+	/* RODAPE */
+
+	#rodape .container {
+		flex-direction: column;
+	}
+
+	.linkTop {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px){
+
+	.container{
+		width: 90%;
+	}
+	
+	/* NAV */
+
+	.cabecalhoPrincipal {
+		padding: 40px 0 20px 0;
+	}
+
+	.cabecalhoPrincipal-nav-link {
+		display: none;
+	}
+	
+	.cabecalhoPrincipal-nav-email {
+		display: inherit;
+		font-weight: 400;
+	}
+	
+	/* HERO */
+
+	.hero-texto {
+		padding-right: 2em;
+	}
+	
+	.hero-titulo {
+		font-size: 2.5em;
+		margin: 20px 0;
+
+	}
+
+	.hero-imagem {
+		margin: 0;	
+	}
+
+	.hero-imagem img {
+		height: 15em;
+	}
+
+	.hero-redes {
+		justify-content: space-between;
+	}
+
+	.insta {
+		text-align: right;
+	}
+
+	/* SOBRE MIM */
+
+	#sobreMim{
+		padding: 2.5em 0;
+	}
+
+	.sobreMim-texto {
+		width: 100%;
+	}
+
+	/* SKILLS & HOBBIES */
+
+	#skills {
+		padding: 2.5em 0 1.5em 0;
+	}
+
+	#hobbies {
+		padding: 2 0 1.5em 0;
+	}
+
+	.skillsHobbies-lista {
+		flex-wrap: wrap;
+		
+	}
+
+	.skillsHobbies-item {
+		width: 25%;
+		height: 8em;
+		margin: 1%;
+	}
+
+	/* FORMAÇÃO */
+
+	#formacao {
+		padding: 2.5em 0;
+	}
+
+	.formacao-lista {
+		justify-content: space-between;
+	}
+
+	.formacao-item {
+		width: 45%;
+	}
+
+	.formacao-item p {
+		margin-bottom: 10px;
+	}
+
+	.formacao-box {
+		width: auto;
+
+
+	}
+	.formacao-img {
+		width: 9em;
+		height: auto;
+	}
+
+	.formacao-img__ufcg{
+		width: 15em;
+		height: auto;
+	}
+	
+	/* PROJETOS */
+
+	#projetos {
+		padding: 2.5em 0;
+		align-items: center;
+	}
+	
+	.projetos-d, .projetos-e {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.projetos-img {
+		width: 100%;
+	}
+
+	.projetos-conteudo {
+		margin: 15px 0;
+		text-align: center;
+	}
+
+	.projetos-btns {
+		justify-content: center;
+	}
+
+	/* CONTATO */
+
+	#contato .container {
+		align-items: center;
+	}
+	
+	.cont-img {
+		width: 40vw;
+		height: auto;
+	}
+
+	.contato-conteudo {
+		width: 70%;
+	}
+
+	/* RODAPE */
+
+	#rodape .container {
+		flex-direction: column;
+	}
+
+	.linkTop {
+		margin-top: 20px;
+	}
+} 
